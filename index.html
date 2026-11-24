@@ -1,0 +1,1117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ks舞团 - 官方视频门户_街舞原创内容与创作者社区</title>
+<meta name="description" content="ks舞团官方网站，专注街舞原创影像与舞者成长，提供高清作品、创作幕后、公开课与社区互动，打造值得信赖的舞团视频内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1230'/%3E%3Cpath d='M20 44 L28 20 L36 36 L44 20 L48 44' stroke='%23ff2e63' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='46' cy='16' r='4' fill='%2326e6c6'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ksl-ink:#0e1230;
+    --ksl-ink-2:#171c3f;
+    --ksl-paper:#f4f5fb;
+    --ksl-card:#ffffff;
+    --ksl-neon:#ff2e63;
+    --ksl-mint:#26e6c6;
+    --ksl-violet:#7b5cff;
+    --ksl-mute:#5c6285;
+    --ksl-line:#e2e4f2;
+    --ksl-shadow:0 18px 46px rgba(14,18,48,.12);
+    --ksl-radius:18px;
+    --ksl-stick:118px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:var(--ksl-stick)}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+    background:var(--ksl-paper);
+    color:var(--ksl-ink);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer}
+  h1,h2,h3,h4{margin:0 0 .5em;line-height:1.3}
+  p{margin:0 0 1em}
+  ul{margin:0;padding:0;list-style:none}
+  .ksl-wrap{width:min(1180px,calc(100% - 40px));margin:0 auto}
+  .ksl-eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--ksl-neon);font-weight:700;margin-bottom:12px;
+  }
+  .ksl-eyebrow::before{content:"";width:22px;height:2px;background:var(--ksl-neon);border-radius:2px}
+  .ksl-sec{padding:64px 0}
+  .ksl-sec--tight{padding:44px 0}
+  .ksl-sec-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:32px}
+  .ksl-sec-head h2{font-size:clamp(24px,3.2vw,34px);letter-spacing:.01em}
+  .ksl-sec-head p{max-width:560px;color:var(--ksl-mute);margin:0;font-size:15px}
+  .ksl-btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:11px 22px;border-radius:999px;border:1px solid transparent;
+    font-size:14px;font-weight:600;transition:.22s ease;background:var(--ksl-card);
+  }
+  .ksl-btn--primary{background:var(--ksl-neon);color:#fff;box-shadow:0 10px 24px rgba(255,46,99,.32)}
+  .ksl-btn--primary:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(255,46,99,.4)}
+  .ksl-btn--ghost{border-color:rgba(255,255,255,.45);color:#fff}
+  .ksl-btn--ghost:hover{background:rgba(255,255,255,.14)}
+  .ksl-btn--line{border-color:var(--ksl-line);color:var(--ksl-ink)}
+  .ksl-btn--line:hover{border-color:var(--ksl-neon);color:var(--ksl-neon)}
+  .ksl-tag{
+    display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;
+    background:rgba(123,92,255,.12);color:var(--ksl-violet);font-weight:600;
+  }
+
+  /* ---------- 吸顶公告 + 页头 ---------- */
+  .ksl-topstack{position:sticky;top:0;z-index:60;background:var(--ksl-ink);box-shadow:0 8px 26px rgba(14,18,48,.18)}
+  .ksl-notice{
+    background:linear-gradient(90deg,#ff2e63,#7b5cff 55%,#26e6c6);
+    color:#fff;font-size:13px;padding:8px 0;
+  }
+  .ksl-notice .ksl-wrap{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .ksl-notice strong{background:rgba(14,18,48,.28);padding:2px 10px;border-radius:999px;font-size:12px;letter-spacing:.06em}
+  .ksl-notice a{text-decoration:underline;text-underline-offset:3px}
+  .ksl-header{color:#fff;padding:12px 0}
+  .ksl-header .ksl-wrap{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+  .ksl-brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.02em}
+  .ksl-brand svg{width:34px;height:34px;flex:none}
+  .ksl-brand small{display:block;font-size:10px;font-weight:500;letter-spacing:.28em;color:var(--ksl-mint)}
+  .ksl-nav{margin-left:auto}
+  .ksl-nav ul{display:flex;gap:6px;flex-wrap:wrap}
+  .ksl-nav a{padding:8px 13px;border-radius:10px;font-size:14px;color:#cfd3ec;transition:.2s}
+  .ksl-nav a:hover{background:rgba(255,255,255,.1);color:#fff}
+  .ksl-search{
+    display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);
+    border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:6px 8px 6px 16px;
+  }
+  .ksl-search input{
+    background:transparent;border:0;outline:0;color:#fff;font-size:13px;width:150px;
+  }
+  .ksl-search input::placeholder{color:#9aa0c6}
+  .ksl-search button{
+    background:var(--ksl-mint);border:0;color:var(--ksl-ink);font-weight:700;
+    border-radius:999px;padding:6px 14px;font-size:13px;
+  }
+  .ksl-burger{display:none;background:rgba(255,255,255,.12);border:0;color:#fff;border-radius:10px;padding:8px 11px;font-size:18px;margin-left:auto}
+  .ksl-search-hint{font-size:12px;color:var(--ksl-mint);padding:2px 0 0 16px;min-height:0}
+
+  /* ---------- 首屏 6:4 ---------- */
+  .ksl-hero{
+    background:radial-gradient(900px 460px at 82% -10%,rgba(123,92,255,.4),transparent 60%),
+               radial-gradient(700px 420px at -8% 30%,rgba(38,230,198,.16),transparent 62%),
+               var(--ksl-ink);
+    color:#fff;padding:58px 0 70px;overflow:hidden;
+  }
+  .ksl-hero-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,4fr);gap:44px;align-items:center}
+  .ksl-hero h1{font-size:clamp(40px,6.2vw,68px);letter-spacing:.02em;margin-bottom:14px}
+  .ksl-hero h1 span{color:var(--ksl-mint)}
+  .ksl-hero-lead{font-size:17px;color:#d7dbf3;max-width:520px}
+  .ksl-hero-badge{
+    display:inline-flex;gap:10px;align-items:center;border:1px solid rgba(38,230,198,.5);
+    color:var(--ksl-mint);border-radius:999px;padding:5px 14px;font-size:12px;letter-spacing:.14em;margin-bottom:18px;
+  }
+  .ksl-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 30px}
+  .ksl-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:480px}
+  .ksl-stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:12px 14px}
+  .ksl-stat b{display:block;font-size:23px;color:var(--ksl-mint);letter-spacing:.02em}
+  .ksl-stat span{font-size:12px;color:#a9aed3}
+  .ksl-hero-art{position:relative}
+  .ksl-hero-art figure{margin:0;border-radius:22px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.42);aspect-ratio:4/4.4;background:#11163a}
+  .ksl-hero-art figcaption{
+    position:absolute;left:14px;bottom:14px;right:14px;font-size:12px;color:#fff;
+    background:rgba(14,18,48,.72);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:8px 12px;line-height:1.5;
+  }
+  .ksl-hero-float{
+    position:absolute;top:-16px;right:-10px;background:var(--ksl-neon);color:#fff;border-radius:12px;
+    font-size:12px;font-weight:700;padding:8px 12px;box-shadow:0 12px 26px rgba(255,46,99,.4);
+  }
+
+  /* ---------- 焦点内容 ---------- */
+  .ksl-focus{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:30px}
+  .ksl-focus-main{background:var(--ksl-card);border-radius:var(--ksl-radius);overflow:hidden;box-shadow:var(--ksl-shadow);display:flex;flex-direction:column}
+  .ksl-focus-main figure{margin:0;aspect-ratio:16/9;overflow:hidden;background:#0e1230}
+  .ksl-focus-main .ksl-body{padding:22px 24px 26px}
+  .ksl-focus-main h3{font-size:21px}
+  .ksl-meta{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:12px;color:var(--ksl-mute);margin-bottom:10px}
+  .ksl-meta .ksl-dot{width:4px;height:4px;border-radius:50%;background:var(--ksl-line)}
+  .ksl-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+  .ksl-act{
+    border:1px solid var(--ksl-line);background:#fff;border-radius:999px;padding:6px 13px;
+    font-size:12.5px;color:var(--ksl-mute);transition:.2s;display:inline-flex;gap:6px;align-items:center;
+  }
+  .ksl-act:hover{border-color:var(--ksl-neon);color:var(--ksl-neon)}
+  .ksl-act.is-on{background:rgba(255,46,99,.1);border-color:var(--ksl-neon);color:var(--ksl-neon);font-weight:700}
+  .ksl-list{display:flex;flex-direction:column;gap:12px}
+  .ksl-list-item{
+    display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;background:var(--ksl-card);
+    border:1px solid var(--ksl-line);border-radius:14px;padding:16px 18px;transition:.22s;
+  }
+  .ksl-list-item:hover{border-color:var(--ksl-violet);transform:translateX(3px)}
+  .ksl-rank{
+    width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-weight:800;
+    background:linear-gradient(135deg,var(--ksl-ink),var(--ksl-violet));color:#fff;font-size:15px;
+  }
+  .ksl-list-item h3{font-size:16.5px;margin-bottom:4px}
+  .ksl-list-item p{margin:0 0 8px;font-size:13.5px;color:var(--ksl-mute)}
+  .ksl-micro{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:12px;color:#8a8fb0}
+
+  /* ---------- 品牌故事 / 关键词解析 ---------- */
+  .ksl-story{background:#fff;border-top:1px solid var(--ksl-line);border-bottom:1px solid var(--ksl-line)}
+  .ksl-story-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:40px;align-items:start}
+  .ksl-story-art{border-radius:var(--ksl-radius);overflow:hidden;box-shadow:var(--ksl-shadow);aspect-ratio:3/4;background:#0e1230}
+  .ksl-story-note{margin-top:16px;font-size:13px;color:var(--ksl-mute);border-left:3px solid var(--ksl-mint);padding-left:12px}
+  .ksl-prose h3{margin-top:26px;font-size:18px;display:flex;align-items:center;gap:10px}
+  .ksl-prose h3::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--ksl-neon);flex:none;transform:rotate(45deg)}
+  .ksl-prose p{color:#3b4064;font-size:15px}
+  .ksl-prose strong{color:var(--ksl-ink)}
+  .ksl-quotebar{
+    margin:22px 0;padding:16px 20px;border-radius:14px;background:var(--ksl-paper);
+    border-left:4px solid var(--ksl-violet);font-size:14px;color:#3b4064;
+  }
+
+  /* ---------- 专题 ---------- */
+  .ksl-topics{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+  .ksl-topic{
+    background:var(--ksl-card);border:1px solid var(--ksl-line);border-radius:var(--ksl-radius);
+    padding:22px;display:flex;flex-direction:column;gap:12px;transition:.25s;
+  }
+  .ksl-topic:hover{box-shadow:var(--ksl-shadow);transform:translateY(-4px);border-color:transparent}
+  .ksl-topic-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+  .ksl-topic h3{font-size:17.5px;margin:0}
+  .ksl-status{font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:999px;white-space:nowrap}
+  .ksl-status--live{background:rgba(38,230,198,.16);color:#0d8f7c}
+  .ksl-status--plan{background:rgba(123,92,255,.14);color:var(--ksl-violet)}
+  .ksl-status--done{background:rgba(14,18,48,.08);color:var(--ksl-mute)}
+  .ksl-topic ol{counter-reset:t;display:flex;flex-direction:column;gap:9px;font-size:13.5px;color:#3b4064}
+  .ksl-topic ol li{display:flex;gap:9px;align-items:baseline}
+  .ksl-topic ol li::before{
+    counter-increment:t;content:counter(t,decimal-leading-zero);
+    font-size:11px;font-weight:800;color:var(--ksl-neon);flex:none;
+  }
+
+  /* ---------- 作者：访谈摘录 ---------- */
+  .ksl-authors{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:20px}
+  .ksl-author{
+    background:var(--ksl-card);border:1px solid var(--ksl-line);border-radius:var(--ksl-radius);
+    padding:22px;display:flex;gap:16px;min-width:0;
+  }
+  .ksl-ava{
+    width:56px;height:56px;border-radius:16px;flex:none;display:grid;place-items:center;
+    font-weight:800;font-size:20px;color:#fff;letter-spacing:.02em;
+  }
+  .ksl-author-body{min-width:0}
+  .ksl-author h3{font-size:16.5px;margin:0 0 2px}
+  .ksl-author .ksl-role{font-size:12px;color:var(--ksl-violet);font-weight:700;letter-spacing:.04em}
+  .ksl-author p{font-size:13.5px;color:var(--ksl-mute);margin:8px 0 10px}
+  .ksl-author-nums{display:flex;gap:16px;font-size:12.5px;color:#8a8fb0;margin-bottom:10px}
+  .ksl-author-nums b{color:var(--ksl-ink)}
+
+  /* ---------- 评论：双列短评 + 评分摘要 ---------- */
+  .ksl-comment-layout{display:grid;grid-template-columns:minmax(0,8fr) minmax(0,4fr);gap:26px;align-items:start}
+  .ksl-comments{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .ksl-comment{
+    background:var(--ksl-card);border:1px solid var(--ksl-line);border-radius:14px;padding:18px;
+    display:flex;flex-direction:column;gap:8px;
+  }
+  .ksl-comment-head{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--ksl-mute)}
+  .ksl-ava--sm{width:32px;height:32px;border-radius:50%;font-size:13px}
+  .ksl-stars{color:#ffb020;font-size:13px;letter-spacing:2px}
+  .ksl-comment p{margin:0;font-size:13.5px;color:#3b4064}
+  .ksl-score{
+    background:linear-gradient(160deg,var(--ksl-ink),#232a5e);color:#fff;border-radius:var(--ksl-radius);
+    padding:24px;position:sticky;top:calc(var(--ksl-stick) + 16px);
+  }
+  .ksl-score .ksl-big{font-size:46px;font-weight:800;color:var(--ksl-mint);line-height:1.1}
+  .ksl-bars{margin-top:16px;display:flex;flex-direction:column;gap:11px;font-size:12.5px;color:#c8ccec}
+  .ksl-bar{height:6px;border-radius:99px;background:rgba(255,255,255,.16);overflow:hidden;margin-top:5px}
+  .ksl-bar i{display:block;height:100%;border-radius:99px;background:var(--ksl-neon)}
+
+  /* ---------- 企业动态 / FAQ / 联系 ---------- */
+  .ksl-split{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:28px;align-items:start}
+  .ksl-news{display:flex;flex-direction:column;gap:12px}
+  .ksl-news-item{background:var(--ksl-card);border:1px solid var(--ksl-line);border-radius:14px;padding:16px 18px;display:flex;gap:14px}
+  .ksl-news-item time{font-size:12px;color:var(--ksl-violet);font-weight:700;flex:none;width:74px;padding-top:2px}
+  .ksl-news-item h3{font-size:15px;margin:0 0 4px}
+  .ksl-news-item p{margin:0;font-size:13px;color:var(--ksl-mute)}
+  .ksl-faq details{background:var(--ksl-card);border:1px solid var(--ksl-line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+  .ksl-faq summary{font-weight:600;font-size:14.5px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+  .ksl-faq summary::-webkit-details-marker{display:none}
+  .ksl-faq summary::after{content:"＋";color:var(--ksl-neon);font-weight:800}
+  .ksl-faq details[open] summary::after{content:"－"}
+  .ksl-faq details p{margin:10px 0 0;font-size:13.5px;color:var(--ksl-mute)}
+  .ksl-partners{display:flex;flex-wrap:wrap;gap:10px}
+  .ksl-partner{
+    flex:1 1 130px;background:var(--ksl-card);border:1px dashed var(--ksl-line);border-radius:12px;
+    padding:14px 12px;text-align:center;font-size:13px;font-weight:700;color:var(--ksl-mute);
+  }
+  .ksl-cta-band{
+    background:linear-gradient(120deg,#171c3f,#2b1d55 55%,#0f3b3a);color:#fff;border-radius:24px;
+    padding:36px;display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:space-between;
+  }
+  .ksl-cta-band h2{margin:0 0 6px;font-size:24px}
+  .ksl-cta-band p{margin:0;color:#c3c8e8;font-size:14px;max-width:560px}
+
+  /* ---------- 页脚 ---------- */
+  .ksl-footer{background:var(--ksl-ink);color:#b9bedd;padding:52px 0 26px;margin-top:18px}
+  .ksl-footer-grid{display:grid;grid-template-columns:minmax(0,4fr) repeat(3,minmax(0,2fr));gap:30px}
+  .ksl-footer h4{color:#fff;font-size:14px;letter-spacing:.06em;margin-bottom:12px}
+  .ksl-footer p{font-size:13px;margin:0 0 10px;color:#9aa0c6}
+  .ksl-footer a{font-size:13px;display:block;padding:3px 0;color:#b9bedd;transition:.2s}
+  .ksl-footer a:hover{color:var(--ksl-mint)}
+  .ksl-footbar{border-top:1px solid rgba(255,255,255,.12);margin-top:32px;padding-top:18px;display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;font-size:12.5px;color:#8a90b8}
+
+  /* ---------- 交互元素 ---------- */
+  .ksl-toast{
+    position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);z-index:200;
+    background:var(--ksl-ink);color:#fff;padding:12px 22px;border-radius:999px;font-size:13.5px;
+    opacity:0;pointer-events:none;transition:.3s;box-shadow:0 16px 40px rgba(14,18,48,.4);
+  }
+  .ksl-toast.is-show{opacity:1;transform:translate(-50%,0)}
+  .ksl-to-top{
+    position:fixed;right:20px;bottom:22px;z-index:90;width:46px;height:46px;border-radius:50%;
+    border:0;background:var(--ksl-neon);color:#fff;font-size:19px;box-shadow:0 12px 28px rgba(255,46,99,.4);
+    opacity:0;pointer-events:none;transition:.25s;
+  }
+  .ksl-to-top.is-show{opacity:1;pointer-events:auto}
+  .ksl-modal{
+    position:fixed;inset:0;z-index:180;display:none;place-items:center;padding:20px;
+    background:rgba(14,18,48,.62);backdrop-filter:blur(3px);
+  }
+  .ksl-modal.is-open{display:grid}
+  .ksl-modal-box{background:#fff;border-radius:20px;padding:26px;width:min(520px,100%);max-height:86vh;overflow:auto}
+  .ksl-modal-box h3{margin-bottom:6px}
+  .ksl-modal-box p{font-size:13.5px;color:var(--ksl-mute)}
+  .ksl-modal-close{float:right;border:0;background:var(--ksl-paper);border-radius:50%;width:34px;height:34px;font-size:16px;color:var(--ksl-mute)}
+  .ksl-field{display:flex;flex-direction:column;gap:6px;margin:12px 0;font-size:13px;font-weight:600;color:#3b4064}
+  .ksl-field input,.ksl-field textarea{
+    border:1px solid var(--ksl-line);border-radius:10px;padding:10px 12px;font-size:13.5px;font-family:inherit;outline:0;
+  }
+  .ksl-field input:focus,.ksl-field textarea:focus{border-color:var(--ksl-violet)}
+  .ksl-author-pop{display:flex;gap:14px;align-items:center;margin-bottom:12px}
+
+  @media (max-width:1000px){
+    :root{--ksl-stick:112px}
+    .ksl-hero-grid,.ksl-focus,.ksl-story-grid,.ksl-comment-layout,.ksl-split{grid-template-columns:1fr}
+    .ksl-score{position:static}
+    .ksl-story-art{aspect-ratio:16/10}
+    .ksl-footer-grid{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:760px){
+    .ksl-nav{display:none;width:100%;order:4}
+    .ksl-nav.is-open{display:block}
+    .ksl-nav ul{flex-direction:column;gap:2px;padding-bottom:8px}
+    .ksl-burger{display:inline-block}
+    .ksl-search{margin-left:0;flex:1 1 100%;order:5}
+    .ksl-search input{width:100%}
+    .ksl-hero{padding:40px 0 52px}
+    .ksl-stats{grid-template-columns:1fr 1fr}
+    .ksl-sec{padding:46px 0}
+    .ksl-cta-band{padding:26px}
+    .ksl-footer-grid{grid-template-columns:1fr}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 + 页头（吸顶） -->
+<div class="ksl-topstack">
+  <div class="ksl-notice">
+    <div class="ksl-wrap">
+      <strong>官方发布</strong>
+      <span>2026 冬季新人编舞赛报名通道已开启 · 高清成片《夜行》正片上线 · 公开课第七期开放上传作品</span>
+      <a href="#ksl-news">查看动态 →</a>
+    </div>
+  </div>
+  <header class="ksl-header">
+    <div class="ksl-wrap">
+      <a class="ksl-brand" href="#ksl-top">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#171c3f"/><path d="M20 44 L28 20 L36 36 L44 20 L48 44" stroke="#ff2e63" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="46" cy="16" r="4" fill="#26e6c6"/></svg>
+        <span>ks舞团<small>KS DANCE CREW</small></span>
+      </a>
+      <nav class="ksl-nav" id="kslNav" aria-label="主导航">
+        <ul>
+          <li><a href="#ksl-focus">焦点内容</a></li>
+          <li><a href="#ksl-story">品牌故事</a></li>
+          <li><a href="#ksl-topics">专题企划</a></li>
+          <li><a href="#ksl-authors">创作者</a></li>
+          <li><a href="#ksl-voices">口碑评价</a></li>
+          <li><a href="#ksl-news">企业动态</a></li>
+          <li><a href="#ksl-faq">帮助中心</a></li>
+        </ul>
+      </nav>
+      <div class="ksl-search">
+        <input id="kslSearchInput" type="search" placeholder="搜索作品 / 舞种 / 创作者" aria-label="站内搜索">
+        <button type="button" id="kslSearchBtn">搜索</button>
+      </div>
+      <div class="ksl-search-hint" id="kslSearchHint" aria-live="polite"></div>
+      <button class="ksl-burger" id="kslBurger" type="button" aria-expanded="false" aria-controls="kslNav">☰</button>
+    </div>
+  </header>
+</div>
+
+<main id="ksl-top">
+
+  <!-- S2 品牌首屏 -->
+  <section class="ksl-hero" aria-labelledby="kslHeroTitle">
+    <div class="ksl-wrap ksl-hero-grid">
+      <div>
+        <span class="ksl-hero-badge">官方网站 · 原创正版高清影像</span>
+        <h1 id="kslHeroTitle">ks舞团</h1>
+        <p class="ksl-hero-lead">以街舞为语言的城市影像品牌，深耕齐舞、编舞与青年文化表达，用专业镜头记录每一次落地与起身，为创作者与企业搭建可持续的内容生态。</p>
+        <div class="ksl-hero-actions">
+          <a class="ksl-btn ksl-btn--primary" href="#ksl-focus">观看本期精选</a>
+          <a class="ksl-btn ksl-btn--ghost" href="#ksl-authors">认识创作者</a>
+          <button class="ksl-btn ksl-btn--ghost" type="button" data-ksl-open="submit">投稿入口</button>
+        </div>
+        <div class="ksl-stats">
+          <div class="ksl-stat"><b data-ksl-count="860">860</b><span>原创成片作品</span></div>
+          <div class="ksl-stat"><b data-ksl-count="1240">1240</b><span>签约及合作舞者（位）</span></div>
+          <div class="ksl-stat"><b data-ksl-count="38">38</b><span>城市线下联动站</span></div>
+        </div>
+      </div>
+      <div class="ksl-hero-art">
+        <span class="ksl-hero-float">本周主推 · 夜行</span>
+        <figure>
+          <svg viewBox="0 0 600 660" role="img" aria-label="ks舞团成员在深夜排练厅跳齐舞的红色轮廓主视觉">
+            <defs>
+              <linearGradient id="kslHeroBg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#141a44"/><stop offset=".55" stop-color="#241a4f"/><stop offset="1" stop-color="#0d2f34"/>
+              </linearGradient>
+              <radialGradient id="kslHeroGlow" cx=".5" cy=".4" r=".55">
+                <stop offset="0" stop-color="#ff2e63" stop-opacity=".55"/><stop offset="1" stop-color="#ff2e63" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <rect width="600" height="660" fill="url(#kslHeroBg)"/>
+            <ellipse cx="300" cy="270" rx="280" ry="240" fill="url(#kslHeroGlow)"/>
+            <g stroke="#26e6c6" stroke-width="2" opacity=".5">
+              <path d="M40 520 H560"/><path d="M60 560 H540"/><path d="M90 600 H510"/>
+            </g>
+            <g fill="none" stroke="#ff2e63" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M300 150 l-26 34 l30 26 l-16 40 l30 20"/>
+              <path d="M318 270 l-38 46 l22 58"/>
+              <path d="M302 374 l48 62"/>
+              <path d="M254 316 l-58 18"/>
+            </g>
+            <circle cx="300" cy="128" r="26" fill="#ff2e63"/>
+            <g fill="#26e6c6" opacity=".85">
+              <circle cx="140" cy="200" r="6"/><circle cx="470" cy="180" r="6"/>
+              <circle cx="150" cy="420" r="6"/><circle cx="470" cy="430" r="6"/>
+            </g>
+            <g stroke="#ffffff" stroke-opacity=".22" stroke-width="1">
+              <path d="M0 340 H600"/><path d="M300 0 V660"/>
+            </g>
+            <text x="42" y="86" fill="#ffffff" fill-opacity=".8" font-size="20" font-family="sans-serif" letter-spacing="6">KS CREW</text>
+            <text x="42" y="116" fill="#26e6c6" font-size="13" font-family="sans-serif" letter-spacing="3">STAGE 07 / NIGHT RUN</text>
+          </svg>
+          <figcaption>《夜行》第三机位未剪片段：八人齐舞的呼吸点在副歌第 2 拍，画面保留了地胶反光与汗水的真实质感。</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 焦点内容（一幅重点大图 + 文字列表） -->
+  <section class="ksl-sec" id="ksl-focus" aria-labelledby="kslFocusTitle">
+    <div class="ksl-wrap">
+      <div class="ksl-sec-head">
+        <div>
+          <span class="ksl-eyebrow">FOCUS · 焦点</span>
+          <h2 id="kslFocusTitle">ks舞团本周焦点与热门作品</h2>
+        </div>
+        <p>编辑团队从官方发布队列中筛出本期最值得完整观看的四组内容，涵盖齐舞成片、编舞拆解与幕后纪录，全部为高清正版。</p>
+      </div>
+
+      <div class="ksl-focus">
+        <article class="ksl-focus-main">
+          <figure>
+            <svg viewBox="0 0 640 360" role="img" aria-label="ks舞团《夜行》八人齐舞成片的深色舞台画面">
+              <defs>
+                <linearGradient id="kslFocus1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#101636"/><stop offset="1" stop-color="#3a1550"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#kslFocus1)"/>
+              <g fill="#ff2e63" opacity=".9">
+                <circle cx="120" cy="150" r="16"/><rect x="108" y="168" width="24" height="80" rx="10"/>
+                <circle cx="230" cy="130" r="16"/><rect x="218" y="148" width="24" height="88" rx="10"/>
+                <circle cx="340" cy="160" r="16"/><rect x="328" y="178" width="24" height="76" rx="10"/>
+                <circle cx="450" cy="128" r="16"/><rect x="438" y="146" width="24" height="90" rx="10"/>
+                <circle cx="555" cy="158" r="16"/><rect x="543" y="176" width="24" height="78" rx="10"/>
+              </g>
+              <g stroke="#26e6c6" stroke-width="2" opacity=".7">
+                <path d="M60 300 H580"/><path d="M60 268 H580"/>
+              </g>
+              <g fill="#26e6c6" opacity=".55">
+                <circle cx="90" cy="70" r="5"/><circle cx="560" cy="60" r="5"/><circle cx="320" cy="52" r="5"/>
+              </g>
+              <text x="30" y="332" fill="#ffffff" fill-opacity=".72" font-size="14" font-family="sans-serif">NIGHT RUN · 4K · 官方正片</text>
+            </svg>
+          </figure>
+          <div class="ksl-body">
+            <div class="ksl-meta">
+              <span class="ksl-tag">齐舞成片</span>
+              <span>ks舞团官方</span><span class="ksl-dot"></span>
+              <span>2026-11-18 发布</span>
+            </div>
+            <h3>《夜行》：八个人，一条呼吸线</h3>
+            <p>把城市凌晨四点的地下通道搬进排练厅，用连续长镜头完成一次不剪辑的齐舞。编舞以胸腔带动重心，强调脚步落地后的余震，是本期最完整的品牌作品。</p>
+            <p class="ksl-micro">
+              <span>播放 128.6万</span><span>点赞 9.4万</span><span>收藏 3.1万</span><span>时长 06:42</span>
+            </p>
+            <div class="ksl-actions">
+              <button class="ksl-act" type="button" data-ksl-like>♥ 点赞 <span data-ksl-like-num>94000</span></button>
+              <button class="ksl-act" type="button" data-ksl-fav>☆ 收藏</button>
+              <button class="ksl-act" type="button" data-ksl-copy>复制链接</button>
+              <button class="ksl-act" type="button" data-ksl-open="report">反馈</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="ksl-list">
+          <article class="ksl-list-item">
+            <div class="ksl-rank">01</div>
+            <div>
+              <h3>拆解《夜行》副歌八拍：重心怎么跟着鼓点走</h3>
+              <p>从第 32 秒进入，逐拍慢放并标注脚掌发力点，适合已掌握基础 move 的舞者反复对照练习。</p>
+              <div class="ksl-micro"><span>教程干货</span><span>作者 阿岚</span><span>播放 64.2万</span><span>点赞 4.1万</span><span>收藏 2.3万</span></div>
+              <div class="ksl-actions">
+                <button class="ksl-act" type="button" data-ksl-like>♥ 点赞 <span data-ksl-like-num>41000</span></button>
+                <button class="ksl-act" type="button" data-ksl-fav>☆ 收藏</button>
+              </div>
+            </div>
+          </article>
+          <article class="ksl-list-item">
+            <div class="ksl-rank">02</div>
+            <div>
+              <h3>凌晨四点的排练厅：一次不喊停的幕后纪录</h3>
+              <p>连续拍摄三个夜晚，记录舞者在镜子前反复修改走位的过程，包含两段未在正片出现的即兴。</p>
+              <div class="ksl-micro"><span>创作幕后</span><span>作者 小满</span><span>播放 51.8万</span><span>点赞 3.6万</span><span>收藏 1.7万</span></div>
+              <div class="ksl-actions">
+                <button class="ksl-act" type="button" data-ksl-like>♥ 点赞 <span data-ksl-like-num>36000</span></button>
+                <button class="ksl-act" type="button" data-ksl-fav>☆ 收藏</button>
+              </div>
+            </div>
+          </article>
+          <article class="ksl-list-item">
+            <div class="ksl-rank">03</div>
+            <div>
+              <h3>城市探索：在高架桥下跳一段 Popping 是什么体验</h3>
+              <p>把舞台交给城市本身，本期走进三个非标准场地，用环境音替代配乐，探索街舞与在地空间的关系。</p>
+              <div class="ksl-micro"><span>城市探索</span><span>作者 韦一</span><span>播放 43.5万</span><span>点赞 2.9万</span><span>收藏 1.2万</span></div>
+              <div class="ksl-actions">
+                <button class="ksl-act" type="button" data-ksl-like>♥ 点赞 <span data-ksl-like-num>29000</span></button>
+                <button class="ksl-act" type="button" data-ksl-fav>☆ 收藏</button>
+              </div>
+            </div>
+          </article>
+          <article class="ksl-list-item">
+            <div class="ksl-rank">04</div>
+            <div>
+              <h3>新人公开课第七期：第一次上台前必须知道的六件事</h3>
+              <p>从热身顺序、服装选择到失误后的临场处理，六位授课老师用短访谈给出最实在的回答。</p>
+              <div class="ksl-micro"><span>实用技巧</span><span>作者 木木</span><span>播放 38.1万</span><span>点赞 2.4万</span><span>收藏 1.9万</span></div>
+              <div class="ksl-actions">
+                <button class="ksl-act" type="button" data-ksl-like>♥ 点赞 <span data-ksl-like-num>24000</span></button>
+                <button class="ksl-act" type="button" data-ksl-fav>☆ 收藏</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 / M15 品牌故事 + 关键词解析（800字以上） -->
+  <section class="ksl-sec ksl-story" id="ksl-story" aria-labelledby="kslStoryTitle">
+    <div class="ksl-wrap">
+      <div class="ksl-sec-head">
+        <div>
+          <span class="ksl-eyebrow">BRAND · 品牌故事</span>
+          <h2 id="kslStoryTitle">ks舞团：一支舞团的十年与街舞影像的公共表达</h2>
+        </div>
+        <p>从地下排练厅到城市公共空间，ks舞团把街舞从“一次演出”变成“可持续被观看的内容”。以下为本品牌官方解析。</p>
+      </div>
+
+      <div class="ksl-story-grid">
+        <div>
+          <figure class="ksl-story-art">
+            <svg viewBox="0 0 400 534" role="img" aria-label="ks舞团排练厅镜面墙上层层叠加的舞者练习剪影">
+              <defs>
+                <linearGradient id="kslStory1" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#f4f5fb"/><stop offset="1" stop-color="#d9dcef"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="534" fill="url(#kslStory1)"/>
+              <rect x="42" y="60" width="316" height="330" rx="10" fill="#0e1230" opacity=".92"/>
+              <g stroke="#26e6c6" stroke-width="3" fill="none" stroke-linecap="round">
+                <path d="M120 340 v-52 l24 -30 l20 26 v58"/>
+                <path d="M180 340 v-64 l22 -34 l24 30 v64"/>
+                <path d="M248 340 v-44 l20 -26 l22 24 v44"/>
+              </g>
+              <g fill="#ff2e63">
+                <circle cx="144" cy="146" r="12"/><circle cx="206" cy="132" r="12"/><circle cx="270" cy="150" r="12"/>
+              </g>
+              <g stroke="#7b5cff" stroke-width="2" opacity=".55">
+                <path d="M42 420 H358"/><path d="M42 446 H358"/>
+              </g>
+              <text x="42" y="490" fill="#5c6285" font-size="14" font-family="sans-serif" letter-spacing="4">KS REHEARSAL / 2016-2026</text>
+            </svg>
+          </figure>
+          <p class="ksl-story-note">品牌档案：2016 年成立于城市旧厂房改造的排练厅，2021 年建立独立影像组，2024 年上线官方视频门户。</p>
+        </div>
+
+        <div class="ksl-prose">
+          <h3>从一支队伍，到一个被观看的内容品牌</h3>
+          <p>ks舞团最初只是九个人的周末约舞。没有灯光，没有镜头，只有一块被磨得发白的地胶和一台随时会没电的蓝牙音箱。真正的转折发生在 2019 年：一次商演结束后，队员发现台下观众只记得“热闹”，却没人记得作品讲了什么。从那时起，ks舞团决定把每一次排练、每一场演出都当成可以被记录和复看的内容来对待。也正是这个决定，让 ks舞团逐步从一支表演队伍，成长为一家以街舞影像为核心的企业型内容品牌，并最终建立了自己的官方网站与视频门户。</p>
+          <p>作为垂直领域的持续运营者，ks舞团把“舞者”和“观众”放在同一套叙事里：舞者在舞台上完成表达，影像让表达被更多人看见。官方平台上的每一条内容，都要经过选题、粗剪、舞者确认、二次调色与字幕校对的完整流程，这也是 ks舞团坚持原创、正版、高清的原因——品质不是宣传口号，而是流程的结果。</p>
+
+          <h3>品牌理念：真实、陪伴与可被复述的力量</h3>
+          <p>ks舞团的内容方法论只有一条：不美化困难。镜头里保留喘气、保留失误、保留舞者擦汗时短暂的沉默。因为真实的记录才有力量，而陪伴感来自“我也经历过”。在官方视频门户里，你可以看到一位新人第一次完整跳完两分钟的作品，也能看到资深舞者在成片发布前一天仍在修改最后一个八拍。这种前后呼应的结构，让 ks舞团的内容生态不只是作品陈列，而是成长档案。</p>
+          <div class="ksl-quotebar">“我们不追求每一帧都完美，只希望在观众关掉页面的那一刻，还记得有一个人为了那两分钟练了三百遍。”—— ks舞团影像组内部分享记录</div>
+          <p>包容与多元同样写进品牌基因：齐舞、Popping、Waacking、Breaking、编舞剧场的创作者都能在 ks舞团 找到对应的专题与栏目。ks舞团 的社区规则明确规定，不以外形、基础或地域评价舞者，评审与编辑只讨论作品完成度与表达意图。这套规则让新人敢于上传，也让品牌口碑在长期运营中自然沉淀，成为不少街舞初学者心中的用户首选入口。</p>
+
+          <h3>内容生态：从一支舞到一条完整链路</h3>
+          <p>在 ks舞团 官方发布体系中，一条内容通常会经历四个环节。第一是“选题会”，由编辑与舞者共同判断这个作品是否值得被记录，避免同质化；第二是“拍摄执行”，影像组会根据舞种特征调整机位，例如 Breaking 需要更低的视角与更快的快门，Waacking 则更依赖手部线条与追光；第三是“共创校对”，舞者本人拥有对动作还原度的最终确认权；第四是“上线运营”，包括标签归类、专题归档、社区互动与数据复盘。四个环节构成一条完整链路，也让 ks舞团 的精品内容具备可检索、可追溯、可持续更新的特征。</p>
+          <p>与此同时，ks舞团 把“企业动态”与“社区活力”分开呈现：前者记录比赛、公开课、合作与官方发布，后者承载用户评价、投稿作品与同好讨论。两者互不干扰，却彼此支撑。对于希望长期观察街舞生态的品牌方与机构而言，ks舞团 官方网站提供的是一份稳定、可引用的公开档案；对于普通观众而言，它更像一间随时开着灯的排练厅，你随时可以推门进去，看一群人正在为同一段音乐较劲。</p>
+
+          <h3>社会责任与长期主义</h3>
+          <p>ks舞团 每年会拿出固定比例的公开课名额，面向零基础学生与转行者免费开放；也会与地方文化机构合作，把街舞影像带进社区与校园放映。这些行动并不追求短期曝光，而是希望让更多人理解街舞不只是一项技能，也是一种组织身体与情绪的方式。我们相信，一个品牌的影响力最终来自它是否愿意为行业留下公共资产——教程、访谈、影像档案与可复用的经验。这正是 ks舞团 持续运营的意义，也是我们对“值得信赖”四个字的理解。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- M4 专题 / 企划 -->
+  <section class="ksl-sec ks-sec--tight" id="ksl-topics" aria-labelledby="kslTopicsTitle">
+    <div class="ksl-wrap">
+      <div class="ksl-sec-head">
+        <div>
+          <span class="ksl-eyebrow">SERIES · 专题</span>
+          <h2 id="kslTopicsTitle">正在更新的三组专题企划</h2>
+        </div>
+        <p>专题是 ks舞团 内容生态的骨架：把零散作品收进清晰的叙事线，让观众按兴趣进入，也让创作者被长期看见。</p>
+      </div>
+      <div class="ksl-topics">
+        <article class="ksl-topic">
+          <div class="ksl-topic-head">
+            <h3>专题一 · 一条呼吸线</h3>
+            <span class="ksl-status ksl-status--live">更新中</span>
+          </div>
+          <p style="font-size:13.5px;color:#5c6285;margin:0">聚焦齐舞中“同步”的真实成本，跟踪三支队伍从排练到登台的全过程。</p>
+          <ol>
+            <li>《夜行》八人齐舞的呼吸点标注版</li>
+            <li>第一次合练：为什么总是第 3 拍散</li>
+            <li>登台前 24 小时：舞者的休息与热身清单</li>
+          </ol>
+          <button class="ksl-btn ksl-btn--line" type="button" data-ksl-open="submit">参与本专题投稿</button>
+        </article>
+        <article class="ksl-topic">
+          <div class="ksl-topic-head">
+            <h3>专题二 · 城市地面</h3>
+            <span class="ksl-status ksl-status--plan">筹备中</span>
+          </div>
+          <p style="font-size:13.5px;color:#5c6285;margin:0">走出排练厅，在桥下、天台与旧市场里寻找适合跳舞的真实地面。</p>
+          <ol>
+            <li>高架桥下的 Popping 与回声</li>
+            <li>旧市场清晨六点的地面摩擦力测试</li>
+            <li>天台风大时如何稳住上半身</li>
+          </ol>
+          <button class="ksl-btn ksl-btn--line" type="button" data-ksl-open="submit">报名线下拍摄</button>
+        </article>
+        <article class="ksl-topic">
+          <div class="ksl-topic-head">
+            <h3>专题三 · 新人第一支片</h3>
+            <span class="ksl-status ksl-status--done">已完结</span>
+          </div>
+          <p style="font-size:13.5px;color:#5c6285;margin:0">六位零基础学员的首次成片记录，包含完整的选曲、排练与拍摄流程。</p>
+          <ol>
+            <li>如何为一支 30 秒的短片选曲</li>
+            <li>手机拍摄也能用的三点布光思路</li>
+            <li>剪辑节奏与动作重拍的对应关系</li>
+          </ol>
+          <button class="ksl-btn ksl-btn--line" type="button" data-ksl-open="submit">下载完整攻略</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- M5 创作者矩阵（访谈摘录布局） -->
+  <section class="ksl-sec" id="ksl-authors" aria-labelledby="kslAuthorsTitle">
+    <div class="ksl-wrap">
+      <div class="ksl-sec-head">
+        <div>
+          <span class="ksl-eyebrow">CREATORS · 创作者</span>
+          <h2 id="kslAuthorsTitle">ks舞团创作者矩阵</h2>
+        </div>
+        <p>五位长期合作的舞者与影像创作者，他们决定了这个平台的内容密度与温度。</p>
+      </div>
+      <div class="ksl-authors" id="kslAuthorGrid">
+        <article class="ksl-author">
+          <div class="ksl-ava" style="background:linear-gradient(135deg,#ff2e63,#7b5cff)">岚</div>
+          <div class="ksl-author-body">
+            <h3>阿岚</h3>
+            <span class="ksl-role">编舞 / 齐舞主理人</span>
+            <p>“我更在意动作之间的空白，那里才是呼吸的位置。”阿岚负责 ks舞团 齐舞方向的结构设计，擅长把复杂队形拆成可被普通舞者复现的步骤，是站内教程类内容收藏率最高的一位创作者。</p>
+            <div class="ksl-author-nums"><span>作品 <b>128</b></span><span>粉丝 <b>32.6万</b></span></div>
+            <button class="ksl-act" type="button" data-ksl-author="阿岚">查看档案</button>
+          </div>
+        </article>
+        <article class="ksl-author">
+          <div class="ksl-ava" style="background:linear-gradient(135deg,#26e6c6,#0d8f7c)">满</div>
+          <div class="ksl-author-body">
+            <h3>小满</h3>
+            <span class="ksl-role">幕后纪录 / 剪辑</span>
+            <p>长期跟拍排练厅的“隐形记录者”，习惯用长镜头保留过程中的犹豫与重复。小满的幕后片常被观众称为“看完才敢去练舞”，因为镜头里从不掩饰挫败，却总能给出继续的理由。</p>
+            <div class="ksl-author-nums"><span>作品 <b>96</b></span><span>粉丝 <b>21.4万</b></span></div>
+            <button class="ksl-act" type="button" data-ksl-author="小满">查看档案</button>
+          </div>
+        </article>
+        <article class="ksl-author">
+          <div class="ksl-ava" style="background:linear-gradient(135deg,#7b5cff,#2b1d55)">一</div>
+          <div class="ksl-author-body">
+            <h3>韦一</h3>
+            <span class="ksl-role">Popping / 城市探索</span>
+            <p>把城市当作舞台的实践者，主张“环境音就是最好的配乐”。韦一带队走访过高架桥、旧厂房与菜市场，用不同地面反馈调整肌肉控制，作品常兼具实验性与可看性，是品牌线下联动的主力创作者。</p>
+            <div class="ksl-author-nums"><span>作品 <b>74</b></span><span>粉丝 <b>18.9万</b></span></div>
+            <button class="ksl-act" type="button" data-ksl-author="韦一">查看档案</button>
+          </div>
+        </article>
+        <article class="ksl-author">
+          <div class="ksl-ava" style="background:linear-gradient(135deg,#ff8a3d,#ff2e63)">木</div>
+          <div class="ksl-author-body">
+            <h3>木木</h3>
+            <span class="ksl-role">新人公开课 / 教学</span>
+            <p>“先让人敢跳，再让人跳好。”木木负责新人公开课与入门教程，擅长把专业术语翻译成日常语言，她整理的《上台前六件事》是站内转发量最高的实用清单之一，也常出现在新人的收藏夹首页。</p>
+            <div class="ksl-author-nums"><span>作品 <b>112</b></span><span>粉丝 <b>27.2万</b></span></div>
+            <button class="ksl-act" type="button" data-ksl-author="木木">查看档案</button>
+          </div>
+        </article>
+        <article class="ksl-author">
+          <div class="ksl-ava" style="background:linear-gradient(135deg,#0e1230,#3a1550)">舟</div>
+          <div class="ksl-author-body">
+            <h3>舟舟</h3>
+            <span class="ksl-role">Waacking / 人物访谈</span>
+            <p>手部线条极具辨识度的舞者，同时也是一位耐心的访谈者。舟舟负责 ks舞团 的创作者对话栏目，擅长在闲聊中问出真实答案，她的访谈稿常被当作舞团新成员入门的必读材料，口碑稳定。</p>
+            <div class="ksl-author-nums"><span>作品 <b>63</b></span><span>粉丝 <b>15.8万</b></span></div>
+            <button class="ksl-act" type="button" data-ksl-author="舟舟">查看档案</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 用户评价（双列短评 + 评分摘要） -->
+  <section class="ksl-sec ks-sec--tight" id="ksl-voices" aria-labelledby="kslVoicesTitle">
+    <div class="ksl-wrap">
+      <div class="ksl-sec-head">
+        <div>
+          <span class="ksl-eyebrow">VOICES · 口碑</span>
+          <h2 id="kslVoicesTitle">社区真实评价与评分摘要</h2>
+        </div>
+        <p>以下评价来自官方社区公开留言与线下公开课反馈，保留原始语气，未做润色。</p>
+      </div>
+      <div class="ksl-comment-layout">
+        <div class="ksl-comments">
+          <article class="ksl-comment">
+            <div class="ksl-comment-head"><span class="ksl-ava ksl-ava--sm" style="background:#ff2e63">学</span><span>学员 · 小舟</span></div>
+            <div class="ksl-stars">★★★★★</div>
+            <p>第一次完整看完一支齐舞拆解，才发现原来“齐”是靠呼吸对齐的，不是靠数拍子。按教程练了两周，合练时终于不拖后腿了。</p>
+          </article>
+          <article class="ksl-comment">
+            <div class="ksl-comment-head"><span class="ksl-ava ksl-ava--sm" style="background:#7b5cff">编</span><span>编舞爱好者 · 阿卓</span></div>
+            <div class="ksl-stars">★★★★★</div>
+            <p>专题《一条呼吸线》结构很扎实，从排练到登台，中间那些反复改动作的部分一点没剪掉，看着特别踏实，比很多只放高光时刻的片子更有参考价值。</p>
+          </article>
+          <article class="ksl-comment">
+            <div class="ksl-comment-head"><span class="ksl-ava ksl-ava--sm" style="background:#26e6c6">地</span><span>城市舞者 · 老陈</span></div>
+            <div class="ksl-stars">★★★★☆</div>
+            <p>线下联动站去了两场，组织方对场地和热身时间安排得挺细。唯一建议是希望能提前一周发布集合地点，方便外地舞者安排行程。</p>
+          </article>
+          <article class="ksl-comment">
+            <div class="ksl-comment-head"><span class="ksl-ava ksl-ava--sm" style="background:#ff8a3d">新</span><span>新人 · 阿七</span></div>
+            <div class="ksl-stars">★★★★★</div>
+            <p>我基础很差，一直不敢上传作品。投了第一期之后，编辑给了很具体的反馈，连第几秒重心偏了都标出来。这种反馈比单纯点赞有用太多了。</p>
+          </article>
+          <article class="ksl-comment">
+            <div class="ksl-comment-head"><span class="ksl-ava ksl-ava--sm" style="background:#2b1d55">观</span><span>普通观众 · 林女士</span></div>
+            <div class="ksl-stars">★★★★☆</div>
+            <p>不太懂街舞，但画面很好看，音乐也舒服。幕后纪录那几支我觉得比正片还打动人，尤其是凌晨排练厅那段，能感觉到一群人是真的喜欢这件事。</p>
+          </article>
+          <article class="ksl-comment">
+            <div class="ksl-comment-head"><span class="ksl-ava ksl-ava--sm" style="background:#0d8f7c">合</span><span>合作方 · 城东文创园</span></div>
+            <div class="ksl-stars">★★★★★</div>
+            <p>和 ks舞团 合作过两次线下展演，从方案到执行都很专业，内容审核流程清楚，交付的成片素材规范统一，后续二次使用也很方便。</p>
+          </article>
+        </div>
+        <aside class="ksl-score" aria-label="评分摘要">
+          <span class="ksl-eyebrow" style="color:#26e6c6">RATING</span>
+          <div class="ksl-big">4.8<span style="font-size:16px;color:#c8ccec">/5</span></div>
+          <p style="font-size:13px;color:#c8ccec;margin:6px 0 0">基于 3,286 条社区公开评价与课程反馈</p>
+          <div class="ksl-bars">
+            <div>内容专业度<div class="ksl-bar"><i style="width:96%"></i></div></div>
+            <div>画质与剪辑<div class="ksl-bar"><i style="width:93%"></i></div></div>
+            <div>社区氛围<div class="ksl-bar"><i style="width:90%"></i></div></div>
+            <div>投稿反馈速度<div class="ksl-bar"><i style="width:86%"></i></div></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 辅助区：企业动态 + 合作品牌 + FAQ + 联系投稿 -->
+  <section class="ksl-sec" id="ksl-news" aria-labelledby="kslNewsTitle">
+    <div class="ksl-wrap">
+      <div class="ksl-sec-head">
+        <div>
+          <span class="ksl-eyebrow">NEWS · 企业动态</span>
+          <h2 id="kslNewsTitle">官方发布与企业动态</h2>
+        </div>
+        <p>品牌资讯、内容更新与线下活动公告统一在此发布，重要变更以官方口径为准。</p>
+      </div>
+
+      <div class="ksl-split">
+        <div>
+          <div class="ksl-news">
+            <article class="ksl-news-item">
+              <time datetime="2026-11-20">11-20</time>
+              <div>
+                <h3>冬季新人编舞赛报名开启，赛程与评审名单同步公布</h3>
+                <p>本次比赛设齐舞与个人两个组别，报名截止 12 月 8 日，评审包含三位舞团主理人与两位影像导演，作品须为原创正版。</p>
+              </div>
+            </article>
+            <article class="ksl-news-item">
+              <time datetime="2026-11-18">11-18</time>
+              <div>
+                <h3>《夜行》正片上线，4K 版本同步更新至官方门户</h3>
+                <p>包含三个机位与整支拆解教程，官方频道与门户同步发布，支持收藏与分享。</p>
+              </div>
+            </article>
+            <article class="ksl-news-item">
+              <time datetime="2026-11-12">11-12</time>
+              <div>
+                <h3>公开课第七期开放上传，新增“新人第一支片”辅导通道</h3>
+                <p>上传作品将由编辑团队在 5 个工作日内给出反馈，优秀作品进入专题候选池。</p>
+              </div>
+            </article>
+            <article class="ksl-news-item">
+              <time datetime="2026-11-05">11-05</time>
+              <div>
+                <h3>与三座城市文创空间达成年度合作，线下联动站增至 38 站</h3>
+                <p>新增站点将提供固定排练时段与拍摄支持，具体排期见社区公告。</p>
+              </div>
+            </article>
+          </div>
+
+          <h3 style="margin:30px 0 12px;font-size:17px">合作品牌与伙伴</h3>
+          <div class="ksl-partners">
+            <span class="ksl-partner">城东文创园</span>
+            <span class="ksl-partner">回声录音棚</span>
+            <span class="ksl-partner">地面实验室</span>
+            <span class="ksl-partner">青年文化基金</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="ksl-cta-band" style="margin-bottom:26px">
+            <div>
+              <h2>把你的作品交给 ks舞团</h2>
+              <p>无论你是刚学三个月，还是已经带过队伍上台，只要作品原创、画面清晰，都欢迎投稿。官方编辑会给出具体修改建议。</p>
+            </div>
+            <button class="ksl-btn ksl-btn--primary" type="button" data-ksl-open="submit">立即投稿</button>
+          </div>
+
+          <div class="ksl-faq" id="ksl-faq">
+            <h3 style="font-size:17px;margin-bottom:14px">常见问题</h3>
+            <details>
+              <summary>投稿作品需要满足哪些基本要求？</summary>
+              <p>作品须为原创或已获授权，画面建议 1080P 以上，时长 15 秒至 10 分钟。请附带舞种、参与人数与拍摄地点说明，方便编辑归类。</p>
+            </details>
+            <details>
+              <summary>官方多久会给出投稿反馈？</summary>
+              <p>正常为 5 个工作日内，比赛期间可能延长至 7 个工作日。反馈包含内容评价与可执行的改进建议，不涉及评分排名。</p>
+            </details>
+            <details>
+              <summary>平台上的内容可以二次使用吗？</summary>
+              <p>个人学习与非商业分享可注明来源后使用；商业用途需通过官方渠道申请授权，我们会提供正式授权说明。</p>
+            </details>
+            <details>
+              <summary>线下联动站如何报名参加？</summary>
+              <p>关注社区公告中的站点排期，按照公告填写报名信息即可。部分站点有人数上限，将按报名顺序确认。</p>
+            </details>
+            <details>
+              <summary>新人公开课是否收费？</summary>
+              <p>基础公开课长期免费，进阶工作坊收取成本费用，学生与转行者可申请减免名额，具体以当期公告为准。</p>
+            </details>
+            <details>
+              <summary>如何联系品牌合作？</summary>
+              <p>可在页面底部合作邮箱提交需求简述，注明合作形式、时间与预算范围，品牌组会在 3 个工作日内回复。</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- S8 页脚 -->
+<footer class="ksl-footer">
+  <div class="ksl-wrap">
+    <div class="ksl-footer-grid">
+      <div>
+        <h4>ks舞团 · 官方网站</h4>
+        <p>以街舞为语言的城市影像品牌，专注原创正版高清内容，持续运营创作者社区与线下公开课。</p>
+        <p>合作邮箱：brand@ksdancecrew.example<br>投稿咨询：creator@ksdancecrew.example</p>
+      </div>
+      <div>
+        <h4>内容频道</h4>
+        <a href="#ksl-focus">焦点内容</a>
+        <a href="#ksl-topics">专题企划</a>
+        <a href="#ksl-authors">创作者矩阵</a>
+        <a href="#ksl-voices">社区口碑</a>
+      </div>
+      <div>
+        <h4>关于品牌</h4>
+        <a href="#ksl-story">品牌故事</a>
+        <a href="#ksl-news">企业动态</a>
+        <a href="#ksl-faq">帮助中心</a>
+        <a href="#ksl-top">返回顶部</a>
+      </div>
+      <div>
+        <h4>社区参与</h4>
+        <a href="#ksl-focus">观看精选</a>
+        <a href="#ksl-news">比赛报名</a>
+        <a href="#ksl-authors">创作者档案</a>
+        <a href="#ksl-faq">投稿说明</a>
+      </div>
+    </div>
+    <div class="ksl-footbar">
+      <span>© 2026 ks舞团 版权所有 · 持续运营中</span>
+      <span>备案号：沪ICP备2026000000号-1</span>
+      <span>原创内容 · 正版高清 · 用户至上</span>
+    </div>
+  </div>
+</footer>
+
+<button class="ksl-to-top" id="kslToTop" type="button" aria-label="回到顶部">↑</button>
+<div class="ksl-toast" id="kslToast" role="status" aria-live="polite"></div>
+
+<!-- 弹窗：投稿 -->
+<div class="ksl-modal" id="kslModalSubmit" role="dialog" aria-modal="true" aria-labelledby="kslSubmitTitle">
+  <div class="ksl-modal-box">
+    <button class="ksl-modal-close" type="button" data-ksl-close>✕</button>
+    <h3 id="kslSubmitTitle">投稿到 ks舞团</h3>
+    <p>填写基本信息，编辑团队会在 5 个工作日内通过邮箱联系你。</p>
+    <label class="ksl-field">作品名称<input type="text" placeholder="例如：夜行 · 练习室版本"></label>
+    <label class="ksl-field">舞种与人数<input type="text" placeholder="例如：齐舞 / 8 人"></label>
+    <label class="ksl-field">作品说明<textarea rows="3" placeholder="简单描述创作背景与拍摄条件"></textarea></label>
+    <button class="ksl-btn ksl-btn--primary" type="button" id="kslSubmitSend">提交投稿</button>
+  </div>
+</div>
+
+<!-- 弹窗：反馈 / 举报 -->
+<div class="ksl-modal" id="kslModalReport" role="dialog" aria-modal="true" aria-labelledby="kslReportTitle">
+  <div class="ksl-modal-box">
+    <button class="ksl-modal-close" type="button" data-ksl-close>✕</button>
+    <h3 id="kslReportTitle">反馈与举报</h3>
+    <p>请描述你遇到的问题，我们会尽快核查处理。</p>
+    <label class="ksl-field">问题类型<input type="text" placeholder="例如：内容信息有误 / 版权问题"></label>
+    <label class="ksl-field">补充说明<textarea rows="3" placeholder="请尽量描述具体位置和现象"></textarea></label>
+    <button class="ksl-btn ksl-btn--primary" type="button" id="kslReportSend">提交反馈</button>
+  </div>
+</div>
+
+<!-- 弹窗：作者档案 -->
+<div class="ksl-modal" id="kslModalAuthor" role="dialog" aria-modal="true" aria-labelledby="kslAuthorTitle">
+  <div class="ksl-modal-box">
+    <button class="ksl-modal-close" type="button" data-ksl-close>✕</button>
+    <div class="ksl-author-pop">
+      <div class="ksl-ava" id="kslAuthorAva" style="background:linear-gradient(135deg,#ff2e63,#7b5cff)">岚</div>
+      <div>
+        <h3 id="kslAuthorTitle" style="margin:0">阿岚</h3>
+        <span class="ksl-role" id="kslAuthorRole">编舞 / 齐舞主理人</span>
+      </div>
+    </div>
+    <p id="kslAuthorText">作者简介加载中。</p>
+    <div class="ksl-author-nums" id="kslAuthorNums"><span>作品 <b>0</b></span><span>粉丝 <b>0</b></span></div>
+    <button class="ksl-btn ksl-btn--primary" type="button" data-ksl-close>关闭</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端导航折叠 */
+  var burger = document.getElementById('kslBurger');
+  var nav = document.getElementById('kslNav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.innerWidth <= 760){
+        nav.classList.remove('is-open');
+        burger.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* Toast */
+  var toast = document.getElementById('kslToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('is-show'); }, 2200);
+  }
+
+  /* 搜索反馈 */
+  var searchInput = document.getElementById('kslSearchInput');
+  var searchBtn = document.getElementById('kslSearchBtn');
+  var searchHint = document.getElementById('kslSearchHint');
+  var searchPool = ['夜行 齐舞成片','副歌八拍 拆解','Popping 城市探索','新人公开课 第七期','幕后纪录 凌晨排练厅','Waacking 手部线条','冬季新人编舞赛','投稿要求说明'];
+  function doSearch(){
+    var kw = (searchInput.value || '').trim();
+    if(!kw){
+      searchHint.textContent = '输入舞种、作品名或创作者，试试“夜行”“Popping”“阿岚”';
+      return;
+    }
+    var hit = searchPool.filter(function(s){ return s.indexOf(kw) > -1; });
+    if(hit.length){
+      searchHint.textContent = '找到 ' + hit.length + ' 条相关内容：' + hit.slice(0,2).join('、') + (hit.length>2?' 等':'');
+    }else{
+      searchHint.textContent = '暂未匹配到“' + kw + '”，可尝试更短的关键词或浏览下方专题';
+    }
+  }
+  if(searchBtn) searchBtn.addEventListener('click', doSearch);
+  if(searchInput){
+    searchInput.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ doSearch(); } });
+    searchInput.addEventListener('input', function(){ if(!searchInput.value.trim()) searchHint.textContent=''; });
+  }
+
+  /* 点赞 +1 / -1 */
+  document.querySelectorAll('[data-ksl-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var numEl = btn.querySelector('[data-ksl-like-num]');
+      var on = btn.classList.toggle('is-on');
+      if(numEl){
+        var n = parseInt(numEl.textContent.replace(/[^\d]/g,''),10) || 0;
+        n = on ? n + 1 : Math.max(0, n - 1);
+        numEl.textContent = n;
+      }
+      showToast(on ? '已点赞，感谢支持原创内容' : '已取消点赞');
+    });
+  });
+
+  /* 收藏切换 */
+  document.querySelectorAll('[data-ksl-fav]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('is-on');
+      btn.textContent = on ? '★ 已收藏' : '☆ 收藏';
+      showToast(on ? '已加入收藏，可在个人页查看' : '已取消收藏');
+    });
+  });
+
+  /* 复制链接 */
+  document.querySelectorAll('[data-ksl-copy]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var text = btn.getAttribute('data-copy-text') || 'ks舞团 · 《夜行》官方正片';
+      function fallback(){
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        try{ document.execCommand('copy'); }catch(e){}
+        document.body.removeChild(ta);
+        showToast('链接已复制，欢迎分享给同好');
+      }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(function(){
+          showToast('链接已复制，欢迎分享给同好');
+        }).catch(fallback);
+      }else{
+        fallback();
+      }
+    });
+  });
+
+  /* 弹窗通用 */
+  var modals = {
+    submit: document.getElementById('kslModalSubmit'),
+    report: document.getElementById('kslModalReport'),
+    author: document.getElementById('kslModalAuthor')
+  };
+  function openModal(key){
+    var m = modals[key];
+    if(!m) return;
+    m.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeAll(){
+    Object.keys(modals).forEach(function(k){
+      if(modals[k]) modals[k].classList.remove('is-open');
+    });
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-ksl-open]').forEach(function(el){
+    el.addEventListener('click', function(){ openModal(el.getAttribute('data-ksl-open')); });
+  });
+  document.querySelectorAll('[data-ksl-close]').forEach(function(el){
+    el.addEventListener('click', function(e){ e.preventDefault(); closeAll(); });
+  });
+  Object.keys(modals).forEach(function(k){
+    if(modals[k]){
+      modals[k].addEventListener('click', function(e){ if(e.target === modals[k]) closeAll(); });
+    }
+  });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeAll(); });
+
+  /* 提交类按钮 */
+  var submitSend = document.getElementById('kslSubmitSend');
+  if(submitSend) submitSend.addEventListener('click', function(){ closeAll(); showToast('投稿已提交，编辑将在 5 个工作日内联系你'); });
+  var reportSend = document.getElementById('kslReportSend');
+  if(reportSend) reportSend.addEventListener('click', function(){ closeAll(); showToast('反馈已收到，感谢你帮助社区变得更好'); });
+
+  /* 作者档案弹窗 */
+  var authorData = {
+    '阿岚': {role:'编舞 / 齐舞主理人', works:'128', fans:'32.6万', color:'linear-gradient(135deg,#ff2e63,#7b5cff)', text:'阿岚负责 ks舞团 齐舞方向的结构设计，擅长把复杂队形拆成可被普通舞者复现的步骤。她坚持在每条教程中标注重心与呼吸点，是站内教程类内容收藏率最高的一位创作者，也是多支品牌成片的编舞主笔。'},
+    '小满': {role:'幕后纪录 / 剪辑', works:'96', fans:'21.4万', color:'linear-gradient(135deg,#26e6c6,#0d8f7c)', text:'小满是 ks舞团 的幕后纪录创作者，长期跟拍排练厅，习惯用长镜头保留过程中的犹豫与重复。她的片子常被观众称为“看完才敢去练舞”，因为镜头里从不掩饰挫败，却总能给出继续的理由。'},
+    '韦一': {role:'Popping / 城市探索', works:'74', fans:'18.9万', color:'linear-gradient(135deg,#7b5cff,#2b1d55)', text:'韦一把城市当作舞台，主张环境音就是最好的配乐。他带队走访高架桥、旧厂房与菜市场，用不同地面反馈调整肌肉控制，作品兼具实验性与可看性，是品牌线下联动的主力创作者。'},
+    '木木': {role:'新人公开课 / 教学', works:'112', fans:'27.2万', color:'linear-gradient(135deg,#ff8a3d,#ff2e63)', text:'木木负责新人公开课与入门教程，擅长把专业术语翻译成日常语言。她整理的《上台前六件事》是站内转发量最高的实用清单之一，帮助大量零基础学员完成了第一支完整作品。'},
+    '舟舟': {role:'Waacking / 人物访谈', works:'63', fans:'15.8万', color:'linear-gradient(135deg,#0e1230,#3a1550)', text:'舟舟是手部线条极具辨识度的舞者，也是 ks舞团 创作者对话栏目的主持者。她擅长在闲聊中问出真实答案，访谈稿常被当作舞团新成员入门的必读材料，社区口碑稳定。'}
+  };
+  document.querySelectorAll('[data-ksl-author]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-ksl-author');
+      var d = authorData[name];
+      if(!d) return;
+      document.getElementById('kslAuthorTitle').textContent = name;
+      document.getElementById('kslAuthorRole').textContent = d.role;
+      document.getElementById('kslAuthorText').textContent = d.text;
+      document.getElementById('kslAuthorNums').innerHTML = '<span>作品 <b>' + d.works + '</b></span><span>粉丝 <b>' + d.fans + '</b></span>';
+      var ava = document.getElementById('kslAuthorAva');
+      ava.textContent = name.charAt(0);
+      ava.style.background = d.color;
+      openModal('author');
+    });
+  });
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('kslToTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520){ toTop.classList.add('is-show'); }
+    else{ toTop.classList.remove('is-show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+})();
+</script>
+</body>
+            </html>
